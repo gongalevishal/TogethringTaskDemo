@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "69283998347",
+    "project_id": "task-demo-1642572473400",
+    "storage_bucket": "task-demo-1642572473400.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69283998347:android:f254f32cdfdc260d97c28e",
+        "android_client_info": {
+          "package_name": "com.ceinsys.togethringtaskdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69283998347-n800er96utfjlindff2ifgie506mmod4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ceinsys.togethringtaskdemo",
+            "certificate_hash": "7dd03290898b000af4d2e43a55d0b2dc3118ae5b"
+          }
+        },
+        {
+          "client_id": "69283998347-ca6ikibfvbqov414bvabt1o48n59ecph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf3HQrJMN7bAKezhDrejUoUykQc-yYPbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69283998347-ca6ikibfvbqov414bvabt1o48n59ecph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

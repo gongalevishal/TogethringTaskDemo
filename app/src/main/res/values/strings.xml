@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Task Demo</string>
+    <string name="show_recyclerview">Show Recyclerview</string>
+    <string name="user_profile">User Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="id">Id</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="signout">SignOut</string>
+    <string name="capture_photo">Capture Photo And Download</string>
+    <string name="download_photo">Download Photo</string>
+</resources>
