@@ -10,4 +10,6 @@
     <string name="signout">SignOut</string>
     <string name="capture_photo">Capture Photo And Download</string>
     <string name="download_photo">Download Photo</string>
+
+    <string name="no_data">No Data</string>
 </resources>
