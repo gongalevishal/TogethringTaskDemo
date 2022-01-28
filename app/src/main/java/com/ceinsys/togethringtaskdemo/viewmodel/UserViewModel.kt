@@ -4,9 +4,11 @@ import android.app.Application
 import android.util.Log
 import android.widget.Toast
 import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.ceinsys.togethringtaskdemo.model.User
+import com.ceinsys.togethringtaskdemo.model.UserDAO
 import com.ceinsys.togethringtaskdemo.model.UserDataBase
 import com.ceinsys.togethringtaskdemo.model.users.UserResponse
 import com.ceinsys.togethringtaskdemo.network.UserApiService
@@ -128,6 +130,10 @@ class UserViewModel(application: Application) : AndroidViewModel(application) {
         loading.value = false
     }
 
+    fun searchDatabase(searchQuery: String): LiveData<List<User>> {
+        val dao = UserDataBase(getApplication()).UserDAO()
+        return dao.searchDatabase(searchQuery)
+    }
 
     fun <T> merge(first: List<T>, second: List<T>): List<T> {
         return object : ArrayList<T>() {

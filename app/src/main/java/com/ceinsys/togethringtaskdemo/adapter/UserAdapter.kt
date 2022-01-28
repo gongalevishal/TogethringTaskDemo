@@ -4,13 +4,15 @@ import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.ceinsys.togethringtaskdemo.R
 import com.ceinsys.togethringtaskdemo.databinding.RowItemUserBinding
 import com.ceinsys.togethringtaskdemo.model.User
+import com.ceinsys.togethringtaskdemo.model.UserDAO
 
-class UserAdapter(val userList: ArrayList<User>) :
+class UserAdapter(var userList: ArrayList<User>) :
     RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
 
 
@@ -66,4 +68,12 @@ class UserAdapter(val userList: ArrayList<User>) :
     override fun getItemCount(): Int {
         return userList.size
     }
+
+    fun setData(userData: ArrayList<User>){
+        val userDiffUtil = UserDiffUtil(userList,userData)
+        val userDiffResult = DiffUtil.calculateDiff(userDiffUtil)
+        this.userList = userData
+        userDiffResult.dispatchUpdatesTo(this)
+    }
+
 }
